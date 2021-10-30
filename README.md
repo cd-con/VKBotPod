@@ -13,7 +13,7 @@ Wrapper for vk_api lib for faster bot buliding
 
 ### Project status:
 
-| Type of components  | Current development status | Estimated release date |
+| Type of components  | Current deployment status | Estimated release date |
 |---------------------|----------------------------|------------------------|
 | Bot LongPoll API    | 🚧🏗️                      | In near future         |
 | Bot Callback API    | ❌                        | In near future         |
