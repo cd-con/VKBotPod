@@ -8,7 +8,7 @@ Wrapper for vk_api lib for faster bot buliding
 
 ### Special thanks to
 
-- movpushmov for readme.md file style
+- [movpushmov](https://github.com/movpushmov/) for readme.md file style
 
 ### Current roadmap:
 
