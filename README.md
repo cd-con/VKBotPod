@@ -16,7 +16,7 @@ Wrapper for vk_api lib for faster bot buliding
 
 | Type of components  | Current deployment status | Estimated release date |
 |---------------------|----------------------------|------------------------|
-| Bot LongPoll API    | 🚧🏗️                      | In near future         |
+| Bot LongPoll API    | 🧪                        | Released               |
 | Bot Callback API    | ❌                        | In near future         |
 | Custom lib API      | 💡                         | In near future         |
 | Web dashboard       | 💡                         | In near future         |
