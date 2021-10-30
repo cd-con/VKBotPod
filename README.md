@@ -10,6 +10,7 @@ Wrapper for vk_api lib for faster bot buliding
 
 - Media content handler (Videos, pictures, e.t.c.)
 - Keyboards
+- Input forms
 
 ### Project status:
 
