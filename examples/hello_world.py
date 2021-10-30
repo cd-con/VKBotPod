@@ -3,7 +3,6 @@ hello_world.py
 By cd-con
 
 Example script for simple usage of VKBotPod library
-15efd8568ae228a4e8967df7fe3150e20e49c390395cfd79886e46c0f739113438c8cd1de927d79b82264
 """
 
 import bot
