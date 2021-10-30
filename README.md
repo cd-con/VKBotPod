@@ -6,6 +6,10 @@ Wrapper for vk_api lib for faster bot buliding
 - Simple syntax
 - Rich functionality
 
+### Special thanks to
+
+- movpushmov for readme.md file style
+
 ### Current roadmap:
 
 - Media content handler (Videos, pictures, e.t.c.)
