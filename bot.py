@@ -3,11 +3,8 @@ import random
 import bs4 as bs4
 import requests
 import vk_api
-from vk_api.bot_longpoll import VkBotLongPoll
 from vk_api.longpoll import VkLongPoll, VkEventType
 import logging
-import pymitter
-import threading
 
 
 class LongPollBot:
@@ -72,16 +69,14 @@ class LongPollBot:
 
     def __on_Message(self, *args):
         for arg in args:
-            if arg.type is not None:
-                if arg.type == VkEventType.MESSAGE_NEW:
-                    if arg.text is not None:
-                        try:
-                            item = self.handlers[arg.text]
-                            value = item.text
-                        except KeyError:
-                            value = self.no_handler_found_error
-                        finally:
-                            self.__send_Message(self.event.user_id, self.__fill_var(value))
+            if arg.text is not None:
+                try:
+                    item = self.handlers[arg.text]
+                    value = item.text
+                except KeyError:
+                    value = self.no_handler_found_error
+                finally:
+                    self.__send_Message(self.event.user_id, self.__fill_var(value))
 
     def __on_Typing(self, *args):
         print("User typing")
@@ -123,6 +118,7 @@ class LongPollBot:
                     not_skip = True
 
         return result
+
 
 class Message:
     """
