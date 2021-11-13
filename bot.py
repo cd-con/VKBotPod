@@ -124,33 +124,3 @@ class LongPollBot:
                     not_skip = True
 
         return result
-
-
-class Message:
-    """
-        Message is an object, that helps you create a message
-
-        :arg text: Message text
-        :arg keyboard: keyboard object
-        :arg is_inline: show keyboard in message
-        """
-
-    def __init__(self, text: str, keyboard=None, is_inline=False):
-        self.text = text
-        self.keyboard = keyboard
-        self.is_inline = is_inline
-
-
-class TextTrigger:
-    """
-    TextTrigger is an object, that helps you handle new message incoming event
-
-    :arg text: Trigger on some text
-    :arg case_sensitive: Should trigger to be case sensitive
-    :arg is_logging: Log trigger activation
-    """
-
-    def __init__(self, text: str, case_sensitive=False, is_logging=False):
-        self.text = text
-        self.case_sense = case_sensitive
-        self.is_logging = is_logging
