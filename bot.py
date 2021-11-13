@@ -13,8 +13,9 @@ class LongPollBot:
 
     You should firstly init them, before you start make a bot
 
-    Code example: /examples/hello_world.py
-    :arg token: Your VK community token
+    Code example at /examples/hello_world.py
+
+    :param token: Your VK community token
     """
 
     def __init__(self, token: str):
@@ -87,10 +88,15 @@ class LongPollBot:
                                          'random_id': random.randint(111, 999)})
 
     def __fill_var(self, text: str):
-        text = text.replace("%user_name%", self._get_user_name_from_vk_id(self.event.user_id))
+        text = text.replace("%user_name%", self.get_username(self.event.user_id))
         return text
 
-    def _get_user_name_from_vk_id(self, user_id):
+    def get_username(self, user_id):
+        """
+        Get username by VK ID
+        :param user_id:
+        :return: Username
+        """
         request = requests.get("https://vk.com/id" + str(user_id))
         bs = bs4.BeautifulSoup(request.text, "html.parser")
 
